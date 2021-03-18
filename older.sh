@@ -1,9 +1,10 @@
 #!/bin/bash
 # saved this as older.sh
-echo "Search For Older File"
+pwd
+echo "Oldest File is"
 find -type f -printf '%T+ %p\n' | sort | head -n 1
 
-
+# pwd -> will print the location of the file.
 # find -> searches for files in a directory hierarchy.
 # -type f -> regular file.
 # -printf '%T+ %p\n' -> File's last modification time in the format, Date and time, separated by `+' with file name.
